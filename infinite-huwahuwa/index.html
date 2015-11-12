@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CSSで無限ふわふわ</title>
+</head>
+<style>
+body {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  height: 5000px;
+  background: #333;
+}
+h1 {
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+  color: #eee;
+  font-family: "League Gothic", Impact, sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 100px;
+}
+
+#pagetop {
+  width: 103px;
+  height: 133px;
+  position: fixed;
+  bottom: 80px;
+  right: 320px;
+  color: #000;
+  font-size: 9px;
+  text-align: center;
+}
+
+#pagetop img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: moveY 2s infinite alternate linear;
+  -ms-animation: moveY 2s infinite alternate linear;
+  -webkit-animation: moveY 2s infinite alternate linear;
+  -moz-animation: moveY 2s infinite alternate linear;
+}
+
+@keyframes moveY {
+  0% {top:0px;}
+  50% {top:15px;}
+  100% {top:0px;}
+}
+
+@-ms-keyframes moveY {
+  0% {top:0px;}
+  50% {top:15px;}
+  100% {top:0px;}
+}
+
+@-webkit-keyframes moveY /* Safari and Chrome */
+{
+  0% {top:0px;}
+  50% {top:15px;}
+  100% {top:0px;}
+}
+
+@-moz-keyframes moveY /* Firefox */
+{
+  0% {top:0px;}
+  50% {top:15px;}
+  100% {top:0px;}
+}
+
+</style>
+
+<body>
+  <h1>Infinite HuwaHuwa!</h1>
+  <a href="#" id="pagetop"><img src="top.png"></a>
+</body>
+</html>
