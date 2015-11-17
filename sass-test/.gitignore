@@ -1,0 +1,4 @@
+# sass-test .gitignore
+
+.sass-cache/
+scss/.sass-cache/
