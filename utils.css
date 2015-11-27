@@ -1,10 +1,9 @@
+@charset "UTF-8";
 /**
  * 汎用的なCSSまとめ
  *
  * @author okutani
  */
-
-@charset "UTF-8";
 
 html {
   font-size: 62.5%; /* 約10px */
