@@ -3,20 +3,37 @@
  *
  * @author okutani
  */
+
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%; /* 約10px */
+}
+
 body {
-  /*font-family*/
   /*ゴシック*/
   font-family: Arial, Roboto, "Droid Sans", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   /*明朝*/
   /*font-family:Times New Roman , "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", Hiragino Mincho ProN , "MSP明朝","MS PMincho","MS 明朝",serif;*/
-  /*font color gray*/
-  color: #434343;
-  /*letter-spacing*/
+  color: #333;
+  font-size: 1.6rem;
   letter-spacing: 1px;
 }
 
-/*box-sizing*/
-* { box-sizing: border-box }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #d03c56;
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
 /*margin*/
 .m0 { margin: 0 }
@@ -54,19 +71,19 @@ body {
 
 .pt0 { padding-top: 0 }
 .pt5 { padding-top: 3px }
-.pt5 { padding-top: 5px;}
-.pt10 { padding-top: 10px;}
-.pt15 { padding-top: 15px;}
-.pt20 { padding-top: 20px;}
-.pt30 { padding-top: 30px;}
+.pt5 { padding-top: 5px }
+.pt10 { padding-top: 10px }
+.pt15 { padding-top: 15px }
+.pt20 { padding-top: 20px }
+.pt30 { padding-top: 30px }
 
 .pb0 { padding-bottom: 0 }
-.pb5 { padding-bottom: 5px;}
-.pb5 { padding-bottom: 5px;}
-.pb10 { padding-bottom: 10px;}
-.pb15 { padding-bottom: 15px;}
-.pb20 { padding-bottom: 20px;}
-.pb30 { padding-bottom: 30px;}
+.pb5 { padding-bottom: 5px }
+.pb5 { padding-bottom: 5px }
+.pb10 { padding-bottom: 10px }
+.pb15 { padding-bottom: 15px }
+.pb20 { padding-bottom: 20px }
+.pb30 { padding-bottom: 30px }
 
 /*width*/
 .w100p { width: 100% }
@@ -97,10 +114,13 @@ th { white-space:nowrap }
 /*display none*/
 .hide { display: none }
 
+/*display show*/
+.show { display: block }
+
 /*box-shadow*/
 .box-shadow { box-shadow: 0 1px 3px rgba(0,0,0,.25) }
 
-/*display block*/
+/*block center*/
 .center-block {
   display: block;
   margin-right: auto;
