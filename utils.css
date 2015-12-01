@@ -132,7 +132,10 @@ th { white-space:nowrap }
 /*display show*/
 .show { display: block }
 
-/*box-shadow*/
+/*display inline-block*/
+.inline-block { display: inline-block }
+
+/*box-shadow(bootstrap)*/
 .box-shadow { box-shadow: 0 1px 3px rgba(0,0,0,.25) }
 
 /*block center*/
