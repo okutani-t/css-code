@@ -159,18 +159,22 @@ th { white-space:nowrap }
  * 参考: https://speakerdeck.com/ken_c_lo/zurui-design
  */
 .zlt {
+  border: 0;
   border-top: 1px solid rgba(0, 0, 0, .2);
   box-shadow: 0 1px 0 rgba(255, 255, 255, .3) inset;
 }
 .zlb {
+  border: 0;
   border-bottom: 1px solid rgba(0, 0, 0, .2);
   box-shadow: 0 1px 0 rgba(255, 255, 255, .3);
 }
 .zlr {
+  border: 0;
   border-right: 1px solid rgba(0, 0, 0, .2);
   box-shadow: -1px 0 0 rgba(255, 255, 255, .3) inset;
 }
 .zll {
+  border: 0;
   border-left: 1px solid rgba(0, 0, 0, .2);
   box-shadow: 1px 0 0 rgba(255, 255, 255, .3);
 }
