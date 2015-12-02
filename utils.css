@@ -168,7 +168,7 @@ th { white-space:nowrap }
 }
 .zlr {
   border-right: 1px solid rgba(0, 0, 0, .2);
-  box-shadow: -1 0 0 rgba(255, 255, 255, .3) inset;
+  box-shadow: -1px 0 0 rgba(255, 255, 255, .3) inset;
 }
 .zll {
   border-left: 1px solid rgba(0, 0, 0, .2);
