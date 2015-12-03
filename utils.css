@@ -154,6 +154,13 @@ th { white-space:nowrap }
 .pull-left { float: left }
 .pull-right { float: right }
 
+/*image responsive*/
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /**
  * ズルい線
  * 参考: https://speakerdeck.com/ken_c_lo/zurui-design
