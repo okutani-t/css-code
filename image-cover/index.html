@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>image cover test</title>
+</head>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: slategray;
+}
+header {
+  background: tomato;
+  text-align: center;
+  padding: 10px;
+}
+.eyecatch {
+  background: url("eyecatch.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 800px;
+}
+
+@media screen and (max-width: 600px) {
+  .eyecatch {
+    height: 400px;
+  }
+}
+
+footer {
+  background: slategray;
+}
+</style>
+
+<body>
+  <header>head</header>
+  <div class="eyecatch"></div>
+  <footer>foot</footer>
+</body>
+</html>
