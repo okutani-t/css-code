@@ -185,3 +185,41 @@ th { white-space:nowrap }
   border-left: 1px solid rgba(0, 0, 0, .2);
   box-shadow: 1px 0 0 rgba(255, 255, 255, .3);
 }
+
+/* Sticky footer styles (bootstrap)
+ * <footer class="footer">
+ *   <div class="container">
+ *     <p class="text-muted">Place sticky footer content here.</p>
+ *   </div>
+ * </footer>
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 40px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #ccc;
+  .copyright {
+    line-height: 40px;
+  }
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  .text-muted {
+    margin: 20px 0;
+  }
+}
