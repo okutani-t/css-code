@@ -1,3 +1,28 @@
+@charset "UTF-8";
+
+$footer-color: #f4f4f4;
+$back-color: #f8f8f8;
+$login-back-color: #edeff1;
+$red-color: #E74C3C;
+$purple-color: #9B59B6;
+$blue-color: #3498DB;
+$primary-color: #1abc9c;
+
+html {
+  font-size: 62.5%; /* 約10px */
+}
+
+body {
+  font-family: Lato, Helvetica, "Droid Sans", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  color: #333;
+  font-size: 1.5em; /*Chromeでたまに文字が大きくなるので、bodyだけremでなくてemを使う*/
+  background: $back-color;
+  &.login-back {
+    padding-top: 70px;
+    background: $login-back-color;
+  }
+}
+
 #main {
   width: 940px;
   margin: 0 auto;
