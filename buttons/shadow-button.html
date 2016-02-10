@@ -5,12 +5,15 @@
   <title>立体的なボタンのテスト</title>
   <style>
   body {
+    width: 800px;
+    margin: 0 auto;
     background: #e0e0e0;
-    text-align: center;
     font-size: 18px;
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Roboto, "Droid Sans", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   }
+
+  /***********ボタン1***********/
   #btn {
     margin: 30px auto;
     width: 180px;
@@ -20,10 +23,49 @@
     box-shadow: 0 4px 0 #0088cc;
     cursor: pointer;
     -webkit-user-select: none;
+    text-align: center;
   }
   #btn:hover {
     opacity: 0.6;
   }
+
+  /***********ボタン2***********/
+  .link-btn {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+  .link-btn a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    background: #bbb;
+    color: #fff;
+    box-shadow: 0 3px 0 rgba(136, 136, 136, 1);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
+    text-align: center;
+    font-size: 18px;
+    border-radius: 6px;
+  }
+  .link-btn a:hover {
+    opacity: 0.8;
+  }
+  .link-btn.link-btn-red a {
+    background: #ee887e;
+    box-shadow: 0 4px 0 #eb6254;
+  }
+  .link-btn.link-btn-blue a {
+    background: #7fc2ef;
+    box-shadow: 0 4px 0 #66A9D6;
+  }
+  .link-btn.link-btn-green a {
+    background: #b4d2ae;
+    box-shadow: 0 4px 0 #81d06f;
+  }
+
+
+  /***********ボタン2***********/
+
   </style>
 </head>
 <body>
@@ -33,5 +75,16 @@
     Click Me!
   </div>
 
+  <div class="link-btn link-btn-red">
+    <a href="http://google.com">Google</a>
+  </div>
+
+  <div class="link-btn link-btn-blue">
+    <a href="http://google.com">公式サイトはこちら</a>
+  </div>
+
+  <div class="link-btn link-btn-green">
+    <a href="http://google.com">Yahoo!</a>
+  </div>
 </body>
 </html>
