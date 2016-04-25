@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Code</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <h1>CSS Code</h1>
+    <hr>
+
+    <ul id="main-list">
+    </ul>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="list-data.js"></script>
+  <script>
+  $(function (){
+    var root_path = 'http://okutani-t.github.io/css-code/';
+
+    $.each(list, function(i, item) {
+      var dir_name = item.dir_name;
+      $('#main-list').append('<li><h4>' + dir_name + '</h4></li>');
+      // ul>liの作成
+      var str = '';
+      $.each(item.files, function(i, file) {
+        var url = root_path + dir_name + '/' + file;
+        if (i === 0) {
+          str = '<ul>';
+        }
+
+        str += '<li><a href="' + url + '" target="_blank">' + url + '</a></li>';
+
+        if (i === item.files.length -1) {
+          str += '</ul>';
+          $('#main-list').append(str);
+        }
+      });
+    });
+
+  });
+
+  </script>
+</body>
+</html>
