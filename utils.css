@@ -17,6 +17,8 @@ body {
   color: #333;
   font-size: 1.6em; /*Chromeでたまに文字が大きくなるので、bodyだけremでなくてemを使う*/
   letter-spacing: 1px;
+  /*背景を画面いっぱいに表示するやつ*/
+  /* background: url(background-photo.jpg) center center / cover no-repeat fixed; */
 }
 
 *, *::before, *::after {
