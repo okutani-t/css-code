@@ -110,7 +110,7 @@ header {
   }
   .chat .message {
     padding: 10px 15px;
-    margin: 12px 10px 0 20px;
+    margin: 15px 10px 0 20px;
     line-height: 26px;
   }
   .chat .message:after {
