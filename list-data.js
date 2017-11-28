@@ -6,6 +6,12 @@ var list = [
     ]
   },
   {
+    "dir_name": "chat-flexbox",
+    "files": [
+      "index.html",
+    ]
+  },
+  {
     "dir_name": "hamburger-menu",
     "files": [
       "index.html",
