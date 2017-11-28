@@ -4,6 +4,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: Arial, Roboto, "Droid Sans", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 }
 header,
 .container,
@@ -75,7 +76,7 @@ header {
 .chat .message {
   background-color: #D9F0FF;
   padding: 15px 20px;
-  margin: 15px 25px 0;
+  margin: 15px 10px 0 25px;
   border-radius: 10px;
   line-height: 26px;
   position: relative;
@@ -109,7 +110,7 @@ header {
   }
   .chat .message {
     padding: 10px 15px;
-    margin: 10px 10px 0 20px;
+    margin: 12px 10px 0 20px;
     line-height: 26px;
   }
   .chat .message:after {
