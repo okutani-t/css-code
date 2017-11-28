@@ -1,0 +1,118 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+header,
+.container,
+footer {
+  width: 1000px;
+  margin: 0 auto;
+}
+header,
+footer {
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+header {
+  margin-bottom: 40px;
+}
+.container {
+  display: flex;
+  margin-bottom: 40px;
+}
+.main {
+  flex: 1;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  padding: 20px;
+}
+.sidebar {
+  flex: 0 300px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  .container,
+  footer {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .main {
+    margin: 0;
+  }
+}
+
+/* ふきだし */
+.chat {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.chat .image-box {
+  width: 90px;
+}
+.chat img {
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 4px #ddd;
+  width: 90px;
+  height: 90px;
+}
+.chat .name {
+  text-align: center;
+  font-size: 14px;
+}
+.chat .message {
+  background-color: #D9F0FF;
+  padding: 15px 20px;
+  margin: 15px 25px 0;
+  border-radius: 10px;
+  line-height: 26px;
+  position: relative;
+}
+.chat .message:after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: -10px;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #D9F0FF transparent transparent;
+}
+.chat .message.someone {
+  background-color: #BCF5A9;
+}
+.chat .message.someone:after {
+  border-color: transparent #BCF5A9 transparent transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .chat .image-box {
+    width: 70px;
+  }
+  .chat img {
+    width: 70px;
+    height: 70px;
+  }
+  .chat .message {
+    padding: 10px 15px;
+    margin: 10px 10px 0 20px;
+    line-height: 26px;
+  }
+  .chat .message:after {
+    top: 12px;
+  }
+}
