@@ -36,7 +36,7 @@ var list = [
     "files": [
       "index.html"
     ]
-  }
+  },
   {
     "dir_name": "water-css",
     "files": [
