@@ -1,5 +1,11 @@
 var list = [
   {
+    "dir_name": "bulma",
+    "files": [
+      "index.html"
+    ]
+  },
+  {
     "dir_name": "buttons",
     "files": [
       "index.html"
