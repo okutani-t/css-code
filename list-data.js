@@ -37,4 +37,10 @@ var list = [
       "index.html"
     ]
   }
+  {
+    "dir_name": "water-css",
+    "files": [
+      "index.html"
+    ]
+  }
 ]
