@@ -38,6 +38,12 @@ var list = [
     ]
   },
   {
+    "dir_name": "sal",
+    "files": [
+      "index.html"
+    ]
+  },
+  {
     "dir_name": "solid-char",
     "files": [
       "index.html"
